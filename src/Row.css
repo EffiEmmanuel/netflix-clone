@@ -1,0 +1,32 @@
+.row {
+	margin-left: 20px;
+	color: #fff;
+}
+
+.row-posters {
+	display: flex;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	padding: 20px;
+
+	/* Alternative to make the scrollbar look "transparent" */
+	/* scrollbar-color: #fff #fff; */
+	scrollbar-color: transparent transparent;
+}
+
+/* For browsers that support -webkit-scrollbar */
+.row-posters::-webkit-scrollbar {
+	display: none;
+}
+
+.row-poster {
+	width: 100%;
+	object-fit: contain;
+	max-height: 200px;
+	margin-right: 10px;
+	transition: transform 450ms;
+}
+
+.row-poster:hover {
+	transform: scale(1.08);
+}
